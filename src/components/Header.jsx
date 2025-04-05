@@ -9,13 +9,14 @@ export default function Header(){
 
     return (
         <nav className="bg-slate-700 p-3 text-white">
-            <div className="flex justify-between items-start mx-auto container">
+            <div className="flex justify-between items-center mx-auto container">
                 <div className="">
-                    <h1>Left Side</h1>
+                    <h1>LilacCS</h1>
                 </div>
                 <div className="flex space-x-2">
-                    <h1>Right Side</h1>
                     <Social link="https://github.com" icon="brand-github.svg"/>
+                    <Social link="https://leetcode.com" icon="brand-leetcode.svg"/>
+                    <Social link="https://youtube.com" icon="brand-youtube.svg"/>
                 </div>
             </div>
         </nav>
