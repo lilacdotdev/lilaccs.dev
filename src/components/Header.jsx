@@ -8,7 +8,7 @@ export default function Header(){
     const [isOpen, setMenu] = useState(false);
 
     return (
-        <nav className="bg-slate-700 p-3 text-white">
+        <nav className="sticky top-0 bg-main-secondary p-3 text-white">
             <div className="flex justify-between items-center mx-auto container">
                 <div className="">
                     <h1>LilacCS</h1>
@@ -20,5 +20,5 @@ export default function Header(){
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
