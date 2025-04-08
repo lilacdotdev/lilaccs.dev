@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 export default function Shell() {
     return(
-        <div className="bg-main-primary text-white">
+        <div className="">
             <Header/>
             <Outlet/>
             <Footer/>

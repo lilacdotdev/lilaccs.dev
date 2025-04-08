@@ -2,15 +2,53 @@
 
 @theme {
 
-    --color-main-primary: oklch(0.28 0.0181 241.71);
-    --color-main-secondary: oklch(0.34 0.0244 248.55);
-    --color-main-tertiary: oklch(0.47 0.0254 246.22);
-    --color-accent-primary: oklch(0.4 0.0709 229.86);
-    --color-accent-light: oklch(0.88 0.0094 150.67);
-    --color-accent-dark: oklch(0.27 0.0242 253.69);
+    --color-main-1: oklch(0.28 0.0181 241.71);
+    --color-main-2: oklch(0.34 0.0244 248.55);
+    --color-main-3: oklch(0.47 0.0254 246.22);
+    --color-accent-1: oklch(0.4 0.0709 229.86);
+    --color-accent-2: oklch(0.88 0.0094 150.67);
+    --color-accent-3: oklch(0.27 0.0242 253.69);
+}
+
+@keyframes animate {
+    50% {
+        background-position: 100% 50%;
+    }
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+}
+
+@layer base {
+    h1 {
+        @apply text-[84px] font-black leading-[84px];
+    }
+    h2 {
+        @apply text-[64px] font-black leading-[64px];
+    }
+    h3 {
+        @apply text-[40px] font-black leading-[40px];
+    }
+
+    p {
+        @apply text-[18px] font-semibold leading-[18px]
+    }
+}
+
+@layer components {
+
 }
 
 @layer utilities {
+    .text-vertical-rl {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .text-vertical-lr {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+    }
+
     .text-head {
         @apply text-[84px] font-black leading-[84px];
     }
@@ -41,5 +79,10 @@
 
     .text-mini {
         @apply text-[14px] font-semibold leading-[18px];
+    }
+
+    .gradient-animated {
+        background-size: 200%;
+        animation: animate 2s ease-in-out infinite;
     }
 }
