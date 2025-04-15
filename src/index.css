@@ -1,13 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Zen+Dots&display=swap');
 @import "tailwindcss";
 
-@theme {
 
-    --color-main-1: oklch(0.28 0.0181 241.71);
-    --color-main-2: oklch(0.34 0.0244 248.55);
-    --color-main-3: oklch(0.47 0.0254 246.22);
-    --color-accent-1: oklch(0.4 0.0709 229.86);
-    --color-accent-2: oklch(0.88 0.0094 150.67);
-    --color-accent-3: oklch(0.27 0.0242 253.69);
+@theme {
+    --color-background: oklch(0.13 0.0033 325.76);
+    --color-default: oklch(0.86 0.018 311.56);
 }
 
 @keyframes animate {
@@ -21,17 +18,17 @@
 
 @layer base {
     h1 {
-        @apply text-[84px] font-black leading-[84px];
+        @apply font-[Kanit] text-[84px] font-black;
     }
     h2 {
-        @apply text-[64px] font-black leading-[64px];
+        @apply font-[Kanit] text-[40px] font-bold;
     }
     h3 {
-        @apply text-[40px] font-black leading-[40px];
+        @apply font-[Kanit] text-[28px] font-semibold;
     }
 
     p {
-        @apply text-[18px] font-semibold leading-[18px]
+        @apply font-[Karla] text-[18px] font-semibold;
     }
 }
 
@@ -40,6 +37,7 @@
 }
 
 @layer utilities {
+    /* Text Alignment Classes */
     .text-vertical-rl {
         writing-mode: vertical-rl;
         text-orientation: mixed;
@@ -49,38 +47,16 @@
         text-orientation: mixed;
     }
 
-    .text-head {
-        @apply text-[84px] font-black leading-[84px];
+    /* Text Styling Classes */
+    .text-caption {
+        @apply font-[Karla] text-[18px] font-light;
     }
-
-    .text-mobile-head {
-        @apply text-[64px] font-black leading-[64px];
-    }
-
-    .text-subhead {
-        @apply text-[48px] font-black leading-[56px];
-    }
-
-    .text-desc {
-        @apply text-[20px] font-light leading-[24px];
-    }
-
     .text-label {
-        @apply text-[32px] font-semibold leading-[40px];
+        @apply font-[Kanit] text-[20px] font-semibold;
     }
 
-    .text-body1 {
-        @apply text-[22px] font-light leading-[26px];
-    }
 
-    .text-body2 {
-        @apply text-[20px] font-light leading-[24px];
-    }
-
-    .text-mini {
-        @apply text-[14px] font-semibold leading-[18px];
-    }
-
+    /* Gradient Animation */
     .gradient-animated {
         background-size: 200%;
         animation: animate 2s ease-in-out infinite;
