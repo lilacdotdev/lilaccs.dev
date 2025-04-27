@@ -8,7 +8,7 @@ export default function Landing (){
     return (
     <> 
         {/* TODO: Tweak mobile using the max-sm: protocol */}
-        <section className="sticky top-0 flex-initial bg-[url(/herobg.jpg)] text-black">
+        <section className="sticky top-15 flex-initial bg-[url(/herobg.jpg)] text-black">
             <Element name="Hero">
                 <div className="px-20 py-40 container">
                     <div className="">
@@ -23,9 +23,17 @@ export default function Landing (){
         </section>
         <section className="flex-initial relative bg-background text-default">
             <Element name="Skills">
-                <h2>Skills</h2>
-                <hr class="h-px my-2 bg-gray-200 border-0"></hr>
-                <div className="bg-background h-[2000px]">Testing</div>
+                {/* Wrapper for elem */}
+                <div className="flex flex-col justify-center">
+                    {/* Skills-Readmore */}
+                    {/* <h3>Read More</h3>
+                    <hr class="h-px my-2 bg-gray-200 border-0"></hr> */}
+                    {/* Skills-BG */}
+                    <div className="bg-background h-[2000px]">
+                        <h1>Skills</h1>
+                        
+                    </div>
+                </div>
             </Element>
         </section>
     </>);
