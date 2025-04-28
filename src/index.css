@@ -5,6 +5,9 @@
 @theme {
     --color-background: oklch(0.13 0.0033 325.76);
     --color-default: oklch(0.86 0.018 311.56);
+    --color-primary: oklch(0.52 0.2929 290.65);
+    --color-secondary: oklch(0.74 0.0991 292.44);
+    --color-tertiary: oklch(0.74 0.1211 318.81);
 }
 
 @keyframes animate {
@@ -28,7 +31,18 @@
     }
 
     p {
-        @apply font-[Karla] text-[18px] font-semibold;
+        @apply font-[Karla] text-[20px] font-semibold;
+    }
+    
+    li {
+        @apply font-[Kanit] text-[20px] font-semibold;
+    }
+    a {
+        @apply hover:text-primary hover:underline
+    }
+
+    td {
+        @apply font-[Karla] text-[18px] font-light;
     }
 }
 
