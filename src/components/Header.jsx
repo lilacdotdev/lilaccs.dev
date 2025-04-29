@@ -1,7 +1,6 @@
 import React from "react";
 import { useState , useEffect } from "react";
 
-import Social from "./Social";
 
 export default function Header(props){
 
@@ -25,11 +24,11 @@ export default function Header(props){
                 </div>
                 {/* Right - Navigation Anchors */}
                 <div>
-                    <ul className="flex gap-4">
-                        <li className={props.page == "Home" ? "text-tertiary underline":""}><a>Home</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Card</a></li>
+                    <ul className="collapse lg:visible flex gap-4">
+                        <li className={props.page == "Home" ? "text-tertiary underline":""}><a className="cursor-pointer">Home</a></li>
+                        <li><a className="cursor-not-allowed">Blog</a></li>
+                        <li><a className="cursor-not-allowed">Projects</a></li>
+                        <li><a className="cursor-not-allowed">Card</a></li>
                     </ul>
                 </div>
             </div>

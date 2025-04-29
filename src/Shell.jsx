@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 
+
 import Header from "./components/Header";
+import Landing from "./pages/Landing";
 import Footer from "./components/Footer";
-import { Outlet } from "react-router-dom";
+
 
 export default function Shell() {
     const [currentPage, setCurrentPage] = useState("Home");
     
     return(
-        <div className="">
+        // TODO: Add Mobile Tweaks
+        <div className="relative min-h-[200vh]">
             <Header page={currentPage}/>
-            <Outlet/>
+            <Landing/>
             <Footer/>
         </div>
     );

@@ -247,8 +247,8 @@ export default function Skills (){
     }
 
     return (
-    <section className="flex-initial relative bg-background text-default">
-        <Element name="Skills">
+    <Element name="Skills" className="relative">
+        <section className="flex-initial relative bg-background text-default pb-20">
             <div className="flex flex-col justify-center">
                 <div className="">
                     <div className="py-2 flex justify-center content-center shadow-2xs shadow-white">
@@ -258,12 +258,12 @@ export default function Skills (){
                         <div className="mx-10 pt-5 flex content-center shadow-2xs shadow-white">
                             <h1>Skills</h1>
                         </div>
-                        <div className="mx-10 my-5 flex flex-row bg-primary text-white rounded-2xl">
+                        <div className="mx-10 my-5 flex flex-row bg-gradient-to-b from-grad-1 to-grad-2 text-default rounded-2xl shadow-2xl shadow-grad-1">
                             <div className="flex flex-col shrink-0 basis-1/7 border-r-1 mr-5 justify-items-center my-4">
-                                <button onClick={() => switchSkills(0)}><h2 className={idx == 0 ? "transition ease-in-out duration-500 text-white underline" : "text-black"}>Languages</h2></button>
-                                <button onClick={() => switchSkills(1)}><h2 className={idx == 1 ? "transition ease-in-out duration-500 text-white underline" : "text-black"}>Frameworks</h2></button>
-                                <button onClick={() => switchSkills(2)}><h2 className={idx == 2 ? "transition ease-in-out duration-500 text-white underline" : "text-black"}>Applications</h2></button>
-                                <button onClick={() => switchSkills(3)}><h2 className={idx == 3 ? "transition ease-in-out duration-500 text-white underline" : "text-black"}>O.S.es</h2></button>
+                                <button onClick={() => switchSkills(0)}><h2 className={idx == 0 ? "transition ease-in-out duration-500 text-default underline" : "transition ease-in-out duration-500 hover:text-secondary text-black"}>Languages</h2></button>
+                                <button onClick={() => switchSkills(1)}><h2 className={idx == 1 ? "transition ease-in-out duration-500 text-default underline" : "transition ease-in-out duration-500 hover:text-secondary text-black"}>Frameworks</h2></button>
+                                <button onClick={() => switchSkills(2)}><h2 className={idx == 2 ? "transition ease-in-out duration-500 text-default underline" : "transition ease-in-out duration-500 hover:text-secondary text-black"}>Applications</h2></button>
+                                <button onClick={() => switchSkills(3)}><h2 className={idx == 3 ? "transition ease-in-out duration-500 text-default underline" : "transition ease-in-out duration-500 hover:text-secondary text-black"}>O.S.es</h2></button>
                             </div>
                             <div className="">
                                 {skillText}
@@ -271,9 +271,8 @@ export default function Skills (){
                         </div>
                     </div>
                 </div>
-                <div className="h-[1000px]"></div>
             </div>
-        </Element>
-    </section>
+        </section>
+    </Element>
     );
 };

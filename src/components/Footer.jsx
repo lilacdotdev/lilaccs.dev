@@ -1,9 +1,8 @@
 export default function Footer (){
-    const footermsg = "<LilacCS/>";
     return (
-        <div className="bg-main-2 p-3 text-white">
+        <div className="bg-background text-default border-t-2">
             <div className="flex justify-center items-center mx-auto container">
-                <h3 className="">{footermsg}</h3>
+                <h3 className="">&lt;LilacCS/&gt;</h3>
             </div>
         </div>
     )

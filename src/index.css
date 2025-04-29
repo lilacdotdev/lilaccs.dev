@@ -5,6 +5,10 @@
 @theme {
     --color-background: oklch(0.13 0.0033 325.76);
     --color-default: oklch(0.86 0.018 311.56);
+
+    --color-grad-1: oklch(0.25 0.0269 325.76);
+    --color-grad-2: oklch(0.17 0.0247 325.76);
+
     --color-primary: oklch(0.52 0.2929 290.65);
     --color-secondary: oklch(0.74 0.0991 292.44);
     --color-tertiary: oklch(0.74 0.1211 318.81);
@@ -67,6 +71,9 @@
     }
     .text-label {
         @apply font-[Kanit] text-[20px] font-semibold;
+    }
+    .text-semilg{
+        @apply font-[Kanit] text-[64px] font-bold;
     }
 
 
