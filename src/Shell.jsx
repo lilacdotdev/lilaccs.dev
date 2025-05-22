@@ -11,7 +11,7 @@ export default function Shell() {
     
     return(
         // TODO: Add Mobile Tweaks
-        <div className="relative min-h-[200vh]">
+        <div className="relative">
             <Header page={currentPage}/>
             <Landing/>
             <Footer/>
